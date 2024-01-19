@@ -1,27 +1,47 @@
-# DioNgServices
+# Angular Pokemon Service
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+This project is aimed at studying Angular services and components, providing a simple implementation of a Pokemon service and a corresponding card component. If you're new to Angular, this project can serve as a practical example to understand the basics of services, HTTP requests, component interactions, and how to make an debounced input.
 
-## Development server
+## Project Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **pokemon.service.ts**: This file contains the implementation of the `PokemonService`, an Angular service responsible for fetching Pokemon data from the PokeAPI using HTTP requests.
 
-## Code scaffolding
+- **card.component.ts**: The `CardComponent` is an Angular component that utilizes the `PokemonService` to display Pokemon information in a card format. It also features a search input with debouncing for smoother user experience.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **card.component.html**: The HTML template for the `CardComponent`. It includes an input for searching Pokemon and displays relevant information in a card layout.
 
-## Build
+- **pokemon.ts**: The Pokemon interface file defines the structure of the Pokemon data, including types, abilities, sprites, and other relevant details.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Project running
 
-## Running unit tests
+![Zapdos ftw](src/assets/README/zapdos.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to Use
 
-## Running end-to-end tests
+1. Clone the repository to your local machine.
+2. Open the project in your preferred Angular development environment.
+3. Explore and modify the code to understand the implementation of services and components.
+4. Run the application using the Angular CLI command: `ng serve`.
+5. Open your browser and navigate to `http://localhost:4200/` to see the Pokemon card component in action.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Getting Started
 
-## Further help
+1. **Install Angular CLI**: If you haven't installed the Angular CLI, you can do so by running the following command in your terminal:
+   ```bash
+   npm install -g @angular/cli
+    ```
+2. **Install Dependencies**: Navigate to the project directory and install the project dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    npm install
+    ```
+3. **Run the Application**: Use the Angular CLI to run the application locally:
+bash
+    ```bash
+    ng serve
+    ```
+4. **Explore and Learn**: Review the code in each file to understand how Angular services and components work together to fetch and display Pokemon data.
+
+## Additional Notes
+- This project uses the PokeAPI for fetching Pokemon data. Ensure that you have a stable internet connection for the API requests to work.
+- Feel free to experiment with the code, make changes, and enhance the functionality as part of your learning process.
